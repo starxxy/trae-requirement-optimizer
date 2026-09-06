@@ -1,0 +1,11 @@
+# OS files
+Thumbs.db
+.DS_Store
+
+# Trae files
+.trae/
+.trae-cn/
+
+# Skill archives (keep source, not packaged copies)
+*.zip
+*.skill
