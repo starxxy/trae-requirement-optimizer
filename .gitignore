@@ -12,3 +12,6 @@ Thumbs.db
 
 # Local-only skill source (contains no code to share via this repo)
 github-push/
+
+# Local marketing assets (keep source, not derived screenshots)
+*.png.jpg

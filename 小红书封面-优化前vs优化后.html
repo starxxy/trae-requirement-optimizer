@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小红书封面 - 优化前 vs 优化后</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1440px;
+    overflow: hidden;
+    font-family: "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+    background: linear-gradient(160deg, #1e1b2e 0%, #2b2250 55%, #3a2e6e 100%);
+    color: #fff;
+    position: relative;
+  }
+  /* 装饰 */
+  .glow1 { position: absolute; width: 480px; height: 480px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(139,108,255,.35), transparent 65%);
+    top: -120px; right: -100px; }
+  .glow2 { position: absolute; width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,217,199,.28), transparent 65%);
+    bottom: -100px; left: -80px; }
+  .wrap { position: relative; z-index: 2; padding: 62px 64px 0; height: 100%; display: flex; flex-direction: column; }
+
+  /* 头部 */
+  .header { text-align: center; }
+  .header .kicker { display: inline-block; font-size: 30px; letter-spacing: 6px; font-weight: 700;
+    color: #b9a8ff; background: rgba(139,108,255,.16); border: 2px solid rgba(139,108,255,.45);
+    padding: 10px 34px; border-radius: 999px; margin-bottom: 30px; }
+  .header h1 { font-size: 68px; font-weight: 900; line-height: 1.25; letter-spacing: 1px; }
+  .header h1 em { font-style: normal; color: #ffd24a; }
+  .header .sub { margin-top: 18px; font-size: 30px; color: #cdc6ef; font-weight: 400; }
+
+  /* 对比卡片 */
+  .compare { flex: 1; display: flex; gap: 28px; margin-top: 46px; min-height: 0; }
+  .card { flex: 1; background: rgba(255,255,255,.06); border-radius: 28px; padding: 34px 30px;
+    border: 2px solid rgba(255,255,255,.12); display: flex; flex-direction: column; backdrop-filter: blur(4px); }
+  .card .tag { font-size: 32px; font-weight: 900; display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+  .card .tag .dot { width: 18px; height: 18px; border-radius: 50%; }
+  .before .tag .dot { background: #ff5f6d; box-shadow: 0 0 14px #ff5f6d; }
+  .after .tag .dot { background: #25e3a2; box-shadow: 0 0 14px #25e3a2; }
+  .card .tag .cn { font-size: 34px; margin-right: 6px; }
+  .card .subtitle { font-size: 24px; color: #c6c0e6; margin-bottom: 20px; }
+
+  .quote { font-size: 30px; border-left: 8px solid #ff5f6d; padding-left: 20px; color: #e8e4f6;
+    line-height: 1.7; margin-bottom: 18px; flex-shrink: 0; }
+  .after .quote { border-left-color: #25e3a2; }
+
+  .before .bad { color: #ffb3ba; }
+
+  .list { list-style: none; overflow: hidden; }
+  .list li { display: flex; gap: 12px; align-items: flex-start; font-size: 26px; line-height: 1.55; margin-bottom: 14px; color: #eef1ff; }
+  .list li .emoji { font-size: 26px; flex-shrink: 0; }
+  .after .list li .emoji { color: #25e3a2; }
+
+  /* 底部 CTA */
+  .footer { text-align: center; padding: 26px 0 40px; }
+  .cta { display: inline-block; font-size: 34px; font-weight: 800; color: #1e1b2e;
+    background: linear-gradient(90deg, #ffd24a, #ff9a5a); padding: 16px 44px; border-radius: 999px; }
+  .handle { margin-top: 16px; font-size: 24px; color: #b9b0dc; }
+  .handle.small { margin-top: 8px; font-size: 20px; color: #8f87bf; }
+
+  .divider { height: 2px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.3), transparent); margin-bottom: 34px; }
+</style>
+</head>
+<body>
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+
+  <div class="wrap">
+    <div class="header">
+      <span class="kicker">⚡ AI 效率技巧</span>
+      <h1>别让 AI <em>听不懂</em>你的需求</h1>
+      <div class="sub">需求优化助手 · 一步到位</div>
+    </div>
+
+    <div class="compare">
+      <div class="card before">
+        <div class="tag"><span class="dot"></span><span class="cn">优化前</span>❌ 模糊含糊</div>
+        <div class="quote bad">"帮我加个登录功能"</div>
+        <div class="subtitle">AI 可能这样理解 →</div>
+        <ul class="list">
+          <li><span class="emoji">❓</span> 要什么登录方式？账号还是邮箱？</li>
+          <li><span class="emoji">❓</span> 安全怎么做？会话怎么管？</li>
+          <li><span class="emoji">❓</span> 要不要"记住我"？</li>
+          <li><span class="emoji">😵</span> 结果反复改、来回返工</li>
+        </ul>
+      </div>
+
+      <div class="card after">
+        <div class="tag"><span class="dot"></span><span class="cn">优化后</span>✅ 清晰可执行</div>
+        <div class="quote">"设计并实现安全、友好的登录：账号&#43;密码 + 双重校验 + JWT 会话，支持『记住我』、防暴力破解……"</div>
+        <div class="subtitle">AI 一次就懂 →</div>
+        <ul class="list">
+          <li><span class="emoji">✔</span> 登录方式 / 校验 / 会话全明确</li>
+          <li><span class="emoji">✔</span> 安全细节直接写进需求</li>
+          <li><span class="emoji">✔</span> 交给 AI 一次到位</li>
+          <li><span class="emoji">⚡</span> 少返工 80%</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <div class="cta">需求优化助手</div>
+      <div class="handle">适配 Trae / WorkBuddy / ChatGPT 等各 AI 软件</div>
+      <div class="handle small">v1.0.0 正式版 · v1.1.0 新增英文支持</div>
+    </div>
+  </div>
+</body>
+</html>
