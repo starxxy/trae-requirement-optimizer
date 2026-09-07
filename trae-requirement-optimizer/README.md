@@ -1,6 +1,6 @@
 # 需求优化助手
 
-> 让每一条需求都清晰可执行 —— 模拟 Trae Code 内置的"优化您的输入"功能
+> 让每一条需求都清晰可执行 —— 模拟主流 AI 软件（如 Trae Code）内置的"优化您的输入"功能
 
 在日常开发中，我们常常会提出模糊的需求："加个登录功能"、"优化一下页面"、"把数据导出来"——这些指令不够明确，AI 执行的结果往往不尽如人意。
 
@@ -30,7 +30,7 @@
 
 ## 系统要求
 
-- Trae Work 或 TraeCode（支持 Skills 功能）
+- 支持 Skills 与手动命令的 AI 编程 / 办公软件（如 Trae Work、TraeCode、WorkBuddy、Codex 等）
 - Windows / macOS / Linux
 
 ## 安装步骤
@@ -38,7 +38,7 @@
 ### Windows
 
 1. 解压本压缩包到任意位置
-2. 将三个目录复制到 Trae 全局目录：
+2. 将三个目录复制到 AI 软件的全局配置目录（以下命令以 Trae Work / TraeCode 的 `~/.trae-cn/` 为例，其他 AI 软件请参考下方「其他 AI 软件安装」或按各自软件文档操作）：
    ```powershell
    # 复制技能
    Copy-Item -Recurse "skills\requirement-optimizer" "$env:USERPROFILE\.trae-cn\skills\"
@@ -50,12 +50,12 @@
    Copy-Item "commands\优化.md" "$env:USERPROFILE\.trae-cn\commands\"
    ```
 
-3. 重启 Trae Work 或开启新会话
+3. 重启 AI 软件或开启新会话
 
 ### macOS / Linux
 
 1. 解压本压缩包到任意位置
-2. 将三个目录复制到 Trae 全局目录：
+2. 将三个目录复制到 AI 软件的全局配置目录（以下命令以 Trae Work / TraeCode 的 `~/.trae-cn/` 为例，其他 AI 软件请参考下方「其他 AI 软件安装」或按各自软件文档操作）：
    ```bash
    # 复制技能
    cp -r skills/requirement-optimizer ~/.trae-cn/skills/
@@ -67,7 +67,7 @@
    cp commands/优化.md ~/.trae-cn/commands/
    ```
 
-3. 重启 Trae Work 或开启新会话
+3. 重启 AI 软件或开启新会话
 
 ### 其他 AI 软件安装
 
@@ -140,8 +140,8 @@ trae-requirement-optimizer/
 
 **A:** 请确保：
 1. 文件已复制到正确的全局目录
-2. 已重启 Trae Work 或开启新会话
-3. 检查文件路径是否正确（如 `~/.trae-cn/skills/requirement-optimizer/SKILL.md`）
+2. 已重启 AI 软件或开启新会话
+3. 检查文件路径是否正确（如 Trae Work / TraeCode 的 `~/.trae-cn/skills/requirement-optimizer/SKILL.md`）
 
 ### Q: 如何验证是否安装成功？
 

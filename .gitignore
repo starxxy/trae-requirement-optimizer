@@ -15,3 +15,6 @@ github-push/
 
 # Local marketing assets (keep source, not derived screenshots)
 *.png.jpg
+
+# IDE temporary folders
+draft_*/

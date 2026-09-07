@@ -1,14 +1,14 @@
 ***
 
 name: "需求优化助手"
-description: "模拟 Trae Code 内置的'优化您的输入'功能，对用户指令进行结构化分析、按需提问澄清、确认后执行。当用户提出新的开发/实现型需求时，自动调用本技能进行指令优化与确认。"
+description: "模拟主流 AI 软件（如 Trae Code）内置的'优化您的输入'功能，对用户指令进行结构化分析、按需提问澄清、确认后执行。当用户提出新的开发/实现型需求时，自动调用本技能进行指令优化与确认。"
 ------------------------------------------------------------------------------------------------------
 
 # 需求优化助手（Requirement Optimizer）
 
-本技能模拟 Trae Code 内置的"优化您的输入"功能。核心定位为**输入分析与优化**：对用户指令进行结构化分析，识别模糊表述、信息缺失、逻辑不清晰等问题，在**确有需要时才进行交互式提问**，最终产出优化后的指令供用户确认，**只有在用户明确确认后才能开始执行**。
+本技能模拟主流 AI 软件（如 Trae Code）内置的"优化您的输入"功能。核心定位为**输入分析与优化**：对用户指令进行结构化分析，识别模糊表述、信息缺失、逻辑不清晰等问题，在**确有需要时才进行交互式提问**，最终产出优化后的指令供用户确认，**只有在用户明确确认后才能开始执行**。
 
-This skill simulates Trae Code's built-in "Optimize Your Input" feature. Its core role is **input analysis and optimization**: structurally analyze user instructions to identify vague expressions, missing information, and unclear logic. Ask questions interactively **only when truly needed**, produce an optimized instruction for user confirmation, and **never execute until the user explicitly confirms**.
+This skill simulates mainstream AI tools' built-in "Optimize Your Input" feature (e.g., Trae Code). Its core role is **input analysis and optimization**: structurally analyze user instructions to identify vague expressions, missing information, and unclear logic. Ask questions interactively **only when truly needed**, produce an optimized instruction for user confirmation, and **never execute until the user explicitly confirms**.
 
 ## 语言偏好（Language Preference）
 

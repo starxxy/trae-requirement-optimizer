@@ -1,6 +1,6 @@
 # 需求优化助手（Requirement Optimizer）
 > 你是否还在为"加个登录功能""优化一下页面""把数据导出来"这类模糊需求而头疼？AI 理解偏差、结果不尽如人意——现在只需一条命令，让每一条需求都清晰可执行。
-专为 AI 协作打造的 Trae Skill，模拟 Trae Code 内置的"优化您的输入"功能，在你提出开发需求之后、AI 开始执行之前，插入一个关键的"需求优化"环节：结构化分析、按需提问澄清、确认后执行。
+专为 AI 协作打造的通用 Skill，模拟主流 AI 软件（如 Trae Code）内置的"优化您的输入"功能，在你提出开发需求之后、AI 开始执行之前，插入一个关键的"需求优化"环节：结构化分析、按需提问澄清、确认后执行。
 
 ---
 
@@ -29,7 +29,7 @@
 ### 二、使用环境
 
 - **适用人群**：开发人员、内容创作者及任何频繁向 AI 提出需求的用户
-- **运行平台**：Trae Work / TraeCode 等支持 Skills 的 AI 编程与办公软件（Windows / macOS / Linux）
+- **运行平台**：支持 Skills 与手动命令的 AI 编程 / 办公软件（如 Trae Work、TraeCode、WorkBuddy、Codex 等；Windows / macOS / Linux）
 - **适用场景**：开发需求、任务描述、文案创作等一切需要向 AI 传达指令的场景
 - **输入格式**：任意自然语言指令（中文 / English 均可）
 
@@ -76,7 +76,7 @@ trae-requirement-optimizer/
 
 ### Overview
 > Are you still frustrated by vague requirements like "add a login feature", "tidy up the page", or "export the data"? AI outcomes can miss the mark. Now, with a single command, every requirement becomes clear and executable.
-**Requirement Optimizer** is a Trae Skill that simulates Trae Code's built-in "Optimize Your Input". After you state a requirement and before the AI executes, it inserts a critical optimization step: structural analysis, on-demand clarification, and execution only after your confirmation.
+**Requirement Optimizer** is a cross-platform AI skill that simulates mainstream AI tools' built-in "Optimize Your Input" (e.g., Trae Code). After you state a requirement and before the AI executes, it inserts a critical optimization step: structural analysis, on-demand clarification, and execution only after your confirmation.
 
 ### 1. Key Features
 
@@ -90,7 +90,7 @@ trae-requirement-optimizer/
 ### 2. Environment
 
 - **Target users**: developers, content creators, and anyone who frequently gives instructions to AI
-- **Platform**: AI tools with Skills support such as Trae Work / TraeCode (Windows / macOS / Linux)
+- **Platform**: AI programming / office tools with Skills & manual-command support (e.g., Trae Work, TraeCode, WorkBuddy, Codex; Windows / macOS / Linux)
 - **Scenarios**: development requests, task descriptions, content creation — any place you brief the AI
 - **Input**: any natural-language instruction (Chinese or English)
 
