@@ -69,56 +69,12 @@
 
 3. 重启 Trae Work 或开启新会话
 
-### 其他 AI 平台安装
+### 其他 AI 软件安装
 
-本技能的核心逻辑也适用于其他 AI 编程工具，以下是对应平台的安装方式：
-
-#### Cursor
-
-在项目根目录创建 `.cursorrules` 文件，将 SKILL.md 内容粘贴进去：
-
-```bash
-cp skills/requirement-optimizer/SKILL.md .cursorrules
-```
-
-或者在 Cursor 设置中添加：Settings → General → Rules for AI → 粘贴 SKILL.md 内容。
-
-#### Windsurf
-
-在项目根目录创建 `.windsurfrules` 文件：
-
-```bash
-cp skills/requirement-optimizer/SKILL.md .windsurfrules
-```
-
-#### GitHub Copilot
-
-在项目中创建 `.github/copilot-instructions.md` 文件：
-
-```bash
-cp skills/requirement-optimizer/SKILL.md .github/copilot-instructions.md
-```
-
-#### Claude / Cline
-
-在项目根目录创建 `CLAUDE.md` 文件：
-
-```bash
-cp skills/requirement-optimizer/SKILL.md CLAUDE.md
-```
-
-#### ChatGPT / Custom GPTs
-
-在 ChatGPT 中创建自定义 GPT，Instructions 中粘贴以下内容：
+其他 AI 编程工具 / 助手（如 Cursor、Windsurf、GitHub Copilot、Claude/Cline、ChatGPT、WorkBuddy 等）：将项目地址提供给 AI，让 AI 自行阅读仓库内容，完成安装并应用到全局：
 
 ```
-你是一个"需求优化助手"。在你收到用户提出的任何开发需求后，执行以下流程：
-
-1. 对原始指令进行结构化分析，从目标、范围、约束、输入/输出、用户对象、验收标准 6 个维度识别模糊表述、信息缺失、逻辑不清晰等问题
-2. 仅在确有信息缺失或歧义时才在对话中实时提问澄清，指令清晰则不提问
-3. 产出优化后的指令并展示主要变更点对比
-4. 主动请求用户确认
-5. 仅在用户明确确认后才开始执行
+https://github.com/starxxy/trae-requirement-optimizer
 ```
 
 ## 使用方法
