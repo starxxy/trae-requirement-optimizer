@@ -9,3 +9,6 @@ Thumbs.db
 # Skill archives (keep source, not packaged copies)
 *.zip
 *.skill
+
+# Local-only skill source (contains no code to share via this repo)
+github-push/
