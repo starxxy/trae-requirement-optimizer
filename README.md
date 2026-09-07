@@ -4,6 +4,17 @@
 
 ---
 
+> ### 🇨🇳 国内用户 / China Access Guide
+> GitHub 在国内访问可能较慢，推荐下列任一方式快速获取：
+> - **直接下载打包件**：到本仓库的 **Releases** 页面，下载 `trae-requirement-optimizer.zip` 或 `需求优化助手.skill` 压缩包，解压即用，无需克隆仓库。
+> - **加速下载 GitHub 文件**：给任意 GitHub 链接添加前缀 `https://ghproxy.com/`（示例：`https://ghproxy.com/https://github.com/starxxy/trae-requirement-optimizer/archive/refs/heads/master.zip`）。
+> - **结合加速工具**：使用 Watt Toolkit / dev-sidecar 等工具可提升 GitHub 整体访问速度。
+>
+> ---
+> **国内用户（China）**: GitHub 访问可能较慢。Recommended options — ① download the ready-packaged `trae-requirement-optimizer.zip` / `需求优化助手.skill` from **Releases**; ② prepend `https://ghproxy.com/` to any GitHub link for faster download; ③ use an acceleration tool like Watt Toolkit / dev-sidecar.
+
+---
+
 ## 中文说明
 
 ### 一、核心功能
