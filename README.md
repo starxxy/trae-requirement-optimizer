@@ -59,14 +59,33 @@ trae-requirement-optimizer/
 ├── README.md                                    # 介绍与安装说明
 ├── skills/
 │   └── requirement-optimizer/
-│       └── SKILL.md                            # 技能定义与使用说明
+│       └── SKILL.md                            # v1 技能定义（六阶段流程）
 ├── user_rules/
 │   └── requirement-optimize.md                 # 全局规则（自动触发）
 └── commands/
     └── 优化.md                                 # 手动命令（/优化）
+
+需求优化助手/
+└── SKILL.md                                    # v1 中文镜像
+
+需求优化助手V2/
+└── SKILL.md                                    # v2.0 精简规则集
+
+需求优化助手V2.1/
+└── SKILL.md                                    # v2.1 当前版本（更省 token）
 ```
 
-### 六、许可说明
+### 六、版本演进
+
+| 版本 | 提示词 | 输出 | 特征 | 约 tokens |
+| --- | --- | --- | --- | --- |
+| v1.x | 中英双语 | 跟随用户语言 | 六阶段流程，完整规范，只求把需求讲清楚 | 高 |
+| v2.0 | 纯英文 | 中文 | 紧凑规则集，standard / compact 双模式，never-compress 清单 | ~444 |
+| **v2.1** | 纯英文 | 中文 | 规则并入单一 Rules 列表，Key Changes 默认省略 | **~272（-39%）** |
+
+v2.1 相对 v2.0 的变化：把 Modes / Compact rules / Never-compress / Anti-patterns 数节合并为单一 `## Rules` 列表，删除重复的 Flow 说明与解释性铺垫，输出侧默认省略"变更对比"。安全警告、不可逆操作、步骤顺序、否定词、代码与路径等永不压缩，红线不变（确认前绝不执行、指令清晰则不提问）。
+
+### 七、许可说明
 
 开源免费使用，可自由分享和修改，请保留原作者信息。
 
@@ -120,13 +139,32 @@ trae-requirement-optimizer/
 ├── README.md                                    # Intro & install guide
 ├── skills/
 │   └── requirement-optimizer/
-│       └── SKILL.md                            # Skill definition & guide
+│       └── SKILL.md                            # v1 skill (6-stage flow)
 ├── user_rules/
 │   └── requirement-optimize.md                 # Global rule (auto-trigger)
 └── commands/
     └── 优化.md                                 # Manual command (/优化)
+
+需求优化助手/
+└── SKILL.md                                    # v1 Chinese mirror
+
+需求优化助手V2/
+└── SKILL.md                                    # v2.0 compact ruleset
+
+需求优化助手V2.1/
+└── SKILL.md                                    # v2.1 current (fewer tokens)
 ```
 
-### 6. License
+### 6. Version History
+
+| Version | Prompts | Output | Highlights | ~Tokens |
+| --- | --- | --- | --- | --- |
+| v1.x | Bilingual | User's language | 6-stage flow, full spec, clarity first | High |
+| v2.0 | English | Chinese | Compact ruleset, standard / compact modes, never-compress list | ~444 |
+| **v2.1** | English | Chinese | Rules merged into a single list; Key Changes omitted by default | **~272 (-39%)** |
+
+What changed in v2.1: the Modes / Compact rules / Never-compress / Anti-patterns sections were merged into one `## Rules` list; duplicated flow notes and explanatory padding were removed; the output side drops the "Key Changes" block by default. Security warnings, irreversible ops, step order, negations, code and paths are never compressed, and the hard rules are unchanged (never execute before consent; stay silent when the instruction is clear).
+
+### 7. License
 
 Open source and free to use. You may freely share and modify it; please keep the original author's information.
