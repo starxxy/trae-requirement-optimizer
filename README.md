@@ -6,12 +6,13 @@
 
 > ### 🇨🇳 国内用户 / China Access Guide
 > GitHub 在国内访问可能较慢，推荐下列任一方式快速获取：
-> - **直接下载打包件**：到本仓库的 **Releases** 页面，下载 `trae-requirement-optimizer.zip` 或 `需求优化助手.skill` 压缩包，解压即用，无需克隆仓库。
-> - **加速下载 GitHub 文件**：给任意 GitHub 链接添加前缀 `https://ghproxy.com/`（示例：`https://ghproxy.com/https://github.com/starxxy/trae-requirement-optimizer/archive/refs/heads/master.zip`）。
+> - **直接下载单文件**：当前版本只需一个文件 —— 在仓库中打开 `需求优化助手V2.1/SKILL.md`，点右上角 **Raw** 后另存为 `SKILL.md` 即可，无需克隆整个仓库。
+> - **加速下载 GitHub 文件**：给任意 GitHub 链接添加前缀 `https://ghproxy.com/`（示例：`https://ghproxy.com/https://raw.githubusercontent.com/starxxy/trae-requirement-optimizer/master/需求优化助手V2.1/SKILL.md`）。
 > - **结合加速工具**：使用 Watt Toolkit / dev-sidecar 等工具可提升 GitHub 整体访问速度。
+> - **国内镜像**：Gitee 同步仓库 https://gitee.com/stary19/trae-requirement-optimizer 。
 >
 > ---
-> **国内用户（China）**: GitHub 访问可能较慢。Recommended options — ① download the ready-packaged `trae-requirement-optimizer.zip` / `需求优化助手.skill` from **Releases**; ② prepend `https://ghproxy.com/` to any GitHub link for faster download; ③ use an acceleration tool like Watt Toolkit / dev-sidecar.
+> **国内用户（China）**: GitHub access may be slow. Recommended options — ① download the single file: open `需求优化助手V2.1/SKILL.md` in this repo, click **Raw**, and save it as `SKILL.md`; ② prepend `https://ghproxy.com/` to any GitHub link for faster download; ③ use an acceleration tool like Watt Toolkit / dev-sidecar; ④ use the Gitee mirror https://gitee.com/stary19/trae-requirement-optimizer .
 
 ---
 
@@ -21,7 +22,7 @@
 
 - **需求结构化分析**：从目标、范围、约束、输入/输出、用户对象、验收标准 6 个维度分析指令，识别模糊表述、信息缺失、逻辑不清等问题
 - **按需提问澄清**：仅在确有信息缺失或歧义时，在对话中实时提问（2-4 个关键问题）；指令清晰则不打扰
-- **优化前后对比**：产出"优化后的指令 + 主要变更点"，让你清楚知道改了什么、为什么
+- **优化前后对比**：产出"优化后的指令 + 主要变更点"，让你清楚知道改了什么、为什么（v2.1 默认省略变更对比，按需查看）
 - **确认后执行**：未获得你明确确认前，绝不开始执行任何指令，守住执行红线
 - **全局自动生效**：安装后所有项目每次提出开发需求自动先优化，无需手动调用
 - **多方式触发**：支持手动命令 `/优化`、自然语言"帮我优化"、以及自动触发三种方式
@@ -35,13 +36,17 @@
 
 ### 三、使用教程（三步完成）
 
-**第 1 步 · 安装 Skill**：将下面这段话直接复制发给 AI 软件：
-> 请访问 GitHub 仓库 https://github.com/starxxy/trae-requirement-optimizer ，将其中名称为 requirement-optimizer 的 skill 安装到当前环境，并应用到全局。
+**第 1 步 · 安装 Skill**：将下面这段话直接复制发给 AI 软件（安装**当前版本 v2.1**）：
+> 请访问 GitHub 仓库 https://github.com/starxxy/trae-requirement-optimizer ，将 `需求优化助手V2.1/SKILL.md` 安装到当前环境，并应用到全局。
+
+> 想用经典版（v1，六阶段完整流程，中英双语）则改为安装 `trae-requirement-optimizer/skills/requirement-optimizer/SKILL.md`。
 
 **第 2 步 · 调用 Skill**：在输入框输入 `/优化 你的需求`，或复制以下提示词发送：
 > 请优化：我想添加用户登录功能。
 
 **第 3 步 · 获得结果**：AI 结构化分析你的指令 →（仅在有需要时）实时提问澄清 → 展示"优化后的指令 + 变更对比" → 你确认后，AI 才开始执行。
+
+> v2.1 默认直接输出优化后的指令（省略变更对比），如需查看改动说明，说一声"显示变更对比"即可。
 
 ### 四、使用效果
 
@@ -115,13 +120,17 @@ v2.1 相对 v2.0 的变化：把 Modes / Compact rules / Never-compress / Anti-p
 
 ### 3. Usage (3 Steps)
 
-**Step 1 · Install the Skill**: copy and send the following message to the AI software:
-> Please visit the GitHub repository https://github.com/starxxy/trae-requirement-optimizer , install the skill named requirement-optimizer into the current environment, and apply it globally.
+**Step 1 · Install the Skill**: copy and send the following message to the AI software (installs the **current v2.1**):
+> Please visit the GitHub repository https://github.com/starxxy/trae-requirement-optimizer , install `需求优化助手V2.1/SKILL.md` into the current environment, and apply it globally.
+
+> For the classic version (v1, full 6-stage flow, bilingual), install `trae-requirement-optimizer/skills/requirement-optimizer/SKILL.md` instead.
 
 **Step 2 · Invoke the Skill**: type `/优化 <your requirement>` in the input box, or send the following prompt:
 > Please optimize: I'd like to add a user login feature.
 
 **Step 3 · Get the Result**: the AI structurally analyzes your instruction → (only if needed) asks clarifying questions in chat → shows the "optimized instruction + key changes" → only after your confirmation does the AI start executing.
+
+> v2.1 outputs only the optimized instruction by default (the "key changes" block is omitted). Ask "show key changes" if you want the diff.
 
 ### 4. Effects (Before vs After)
 
